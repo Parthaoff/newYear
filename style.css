@@ -1,6 +1,88 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
 @import url('https://fonts.googleapis.com/css?family=Handlee');
+/* Base Styling Adjustments */
+html {
+    background: #0d0220;
+    font-size: 14px; /* Base font size for scaling */
+}
+
+.happy {
+    font-size: 7vw; /* Scales with viewport width */
+}
+
+.new_year>span {
+    font-size: 12vw; /* Scales with viewport width */
+}
+
+span.eight, span.nine {
+    margin-right: -10vw;
+}
+
+.balloon {
+    width: 8vw;
+    height: 8vw;
+}
+
+.balloon:after {
+    height: 8vw;
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .happy {
+        font-size: 5vw;
+        top: 60%; /* Adjusted for smaller screens */
+    }
+
+    .new_year>span {
+        font-size: 10vw;
+    }
+
+    .balloon {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .fireworks>div span:before,
+    .fireworks>div span:after {
+        height: 4vw;
+    }
+
+    a.author {
+        font-size: 20px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .happy {
+        font-size: 4vw;
+        top: 70%;
+    }
+
+    .new_year {
+        padding: 100px 50px 0 0;
+    }
+
+    .new_year>span {
+        font-size: 8vw;
+    }
+
+    .balloon {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .fireworks>div span:before,
+    .fireworks>div span:after {
+        height: 3vw;
+    }
+
+    a.author {
+        font-size: 18px;
+    }
+}
 
 *, *:after, *:before{
   box-sizing:border-box;
